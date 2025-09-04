@@ -1,10 +1,15 @@
 /* 自定义爱情主题渐变样式 */
 
-/* 主要背景渐变 */
-body {
+/* 主要背景渐变 - 仅在没有首页封面图时应用 */
+body:not(.index) {
   background: linear-gradient(135deg, #FFEAA7 0%, #FFD3A5 25%, #FFA07A 50%, #FFB6C1 75%, #FF9A9E 100%) !important;
   background-attachment: fixed !important;
   min-height: 100vh;
+}
+
+/* 首页背景设为透明，让封面图片正常显示 */
+body.index {
+  background: transparent !important;
 }
 
 /* 顶部导航栏渐变 */
@@ -41,25 +46,21 @@ body {
   box-shadow: 0 4px 20px rgba(255, 154, 158, 0.4) !important;
 }
 
-/* 顶部大图渐变 - 只在没有背景图时应用 */
-#page-header:not([style*="background-image"]) {
+/* 页面头部 - 首页完全不干扰 */
+body:not(.index) #page-header:not([style*="background-image"]):not(.has-img) {
   background: linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%) !important;
 }
 
-/* 如果有背景图，添加渐变叠加效果 */
-#page-header[style*="background-image"] {
-  position: relative;
+/* 首页头部保持原样 */
+body.index #page-header {
+  background: none !important;
+  background-color: transparent !important;
 }
 
-#page-header[style*="background-image"]:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 229, 180, 0.6) 0%, rgba(255, 170, 165, 0.6) 50%, rgba(255, 138, 128, 0.6) 100%);
-  pointer-events: none;
+/* 确保首页的封面能正常显示 */
+body.index #page-header:before,
+body.index #page-header:after {
+  display: none !important;
 }
 
 /* 链接颜色 */

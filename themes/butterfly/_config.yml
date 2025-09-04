@@ -102,9 +102,6 @@ cover:
   # When cover is not set, the default cover is displayed
   default_cover:
     - /img/bg.png
-    - "linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%)"
-    - "linear-gradient(135deg, #FFEAA7 0%, #FFB6C1 50%, #FF9A9E 100%)"
-    - "linear-gradient(135deg, #FFD3A5 0%, #FFA07A 50%, #FFB6C1 100%)"
 
 # Replace Broken Images
 error_img:

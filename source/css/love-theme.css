@@ -75,17 +75,21 @@ a:hover {
 }
 
 /* 代码块美化 */
-.highlight {
+.highlight, pre, code, .post-content .highlight, .article-content .highlight {
   background: rgba(255, 228, 225, 0.8) !important;
   border: 1px solid rgba(255, 182, 193, 0.3) !important;
   border-radius: 8px !important;
 }
 
 /* 引用块美化 */
-blockquote {
+blockquote, .post-content blockquote, .article-content blockquote {
   background: linear-gradient(135deg, rgba(255, 240, 245, 0.8), rgba(255, 228, 225, 0.6)) !important;
   border-left: 4px solid #FF9A9E !important;
   backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
+  margin: 16px 0 !important;
 }
 
 /* 滚动条美化 */
@@ -148,17 +152,19 @@ strong, b {
 }
 
 /* 文章主体容器 */
-#post {
+#post, .post, article, #article-container {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 248, 220, 0.9)) !important;
   border-radius: 15px !important;
   border: 1px solid rgba(255, 182, 193, 0.3) !important;
   box-shadow: 0 12px 40px rgba(255, 154, 158, 0.2) !important;
   backdrop-filter: blur(15px) !important;
   -webkit-backdrop-filter: blur(15px) !important;
+  padding: 20px !important;
+  margin: 20px auto !important;
 }
 
 /* 文章标题特效 */
-#post .post-title {
+#post .post-title, .post .post-title, .post-title, h1.article-title, .article-title {
   background: linear-gradient(45deg, #FF1493, #FF6B9D, #FFB6C1) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -169,7 +175,7 @@ strong, b {
 }
 
 /* 文章元信息 */
-#post .post-meta {
+#post .post-meta, .post .post-meta, .post-meta, .article-meta {
   background: linear-gradient(90deg, rgba(255, 234, 167, 0.6), rgba(255, 182, 193, 0.6)) !important;
   border-radius: 20px !important;
   padding: 8px 16px !important;
@@ -179,7 +185,7 @@ strong, b {
 }
 
 /* 文章内容段落 */
-#post .post-content p {
+#post .post-content p, .post .post-content p, .post-content p, .article-content p {
   background: rgba(255, 250, 250, 0.5) !important;
   border-radius: 8px !important;
   padding: 12px 16px !important;
@@ -189,7 +195,7 @@ strong, b {
 }
 
 /* 文章二级标题 */
-#post .post-content h2 {
+#post .post-content h2, .post .post-content h2, .post-content h2, .article-content h2 {
   background: linear-gradient(90deg, rgba(255, 234, 167, 0.8), rgba(255, 182, 193, 0.8)) !important;
   border-radius: 25px !important;
   padding: 12px 20px !important;
@@ -200,7 +206,7 @@ strong, b {
 }
 
 /* 文章三级标题 */
-#post .post-content h3 {
+#post .post-content h3, .post .post-content h3, .post-content h3, .article-content h3 {
   background: linear-gradient(45deg, rgba(255, 240, 245, 0.9), rgba(255, 228, 225, 0.8)) !important;
   border-radius: 15px !important;
   padding: 8px 16px !important;
@@ -210,7 +216,7 @@ strong, b {
 }
 
 /* 列表样式 */
-#post .post-content ul, #post .post-content ol {
+#post .post-content ul, #post .post-content ol, .post .post-content ul, .post .post-content ol, .post-content ul, .post-content ol, .article-content ul, .article-content ol {
   background: rgba(255, 248, 220, 0.6) !important;
   border-radius: 10px !important;
   padding: 16px 20px !important;
@@ -219,19 +225,46 @@ strong, b {
 }
 
 /* 列表项 */
-#post .post-content li {
+#post .post-content li, .post .post-content li, .post-content li, .article-content li {
   margin: 8px 0 !important;
   padding: 4px 0 !important;
   border-bottom: 1px dotted rgba(255, 182, 193, 0.4) !important;
 }
 
 /* 文章中的强调文本 */
-#post .post-content em {
+#post .post-content em, .post .post-content em, .post-content em, .article-content em {
   background: linear-gradient(45deg, #FFE4E1, #FFB6C1) !important;
   padding: 2px 6px !important;
   border-radius: 4px !important;
   font-style: italic !important;
   color: #8B0000 !important;
+}
+
+/* 通用文章容器样式 - 添加更多选择器确保覆盖 */
+.layout_post #main, .layout_post .main-content, .post-page, .post-wrap {
+  background: transparent !important;
+}
+
+/* 确保所有文章内容区域都应用样式 */
+.post-content, .article-content, #article-container .article-content {
+  background: transparent !important;
+}
+
+/* 强制应用背景到所有可能的文章容器 */
+body.post-page #main .main-content, 
+body.post-page .post,
+body.post-page article,
+.layout_post #main .main-content,
+.layout_post .post,
+.layout_post article {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 248, 220, 0.9)) !important;
+  border-radius: 15px !important;
+  border: 1px solid rgba(255, 182, 193, 0.3) !important;
+  box-shadow: 0 12px 40px rgba(255, 154, 158, 0.2) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  padding: 20px !important;
+  margin: 20px auto !important;
 }
 
 /* 文章底部信息 */

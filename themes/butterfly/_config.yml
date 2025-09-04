@@ -812,15 +812,15 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size:
-  code_font_size:
-  font_family:
-  code_font_family:
+  global_font_size: 14px
+  code_font_size: 12px
+  font_family: PingFangSC
+  code_font_family: JetBrains Mono
 
 # Font settings for the site title and site subtitle
 blog_title_font:
   font_link:
-  font_family:
+  font_family: PingFangSC
 
 # The setting of divider icon
 hr_icon:

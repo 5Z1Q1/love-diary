@@ -11,7 +11,7 @@
 
 nav:
   # Navigation bar logo image
-  logo:
+  logo: /img/favicon.jpg
   display_title: true
   display_post_title: true
   # Whether to fix navigation bar
@@ -53,14 +53,14 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /img/favicon.jpg
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/favicon.jpg
   effect: false
 
 # Disable all banner images
-disable_top_img: /img/bg.png
+disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
 default_top_img: "linear-gradient(45deg, #FFEAA7, #FF9A9E)"
@@ -288,10 +288,10 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/5Z1Q1
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 爱真的需要勇气
   card_recent_post:
     enable: true
     # If set 0 will show all

@@ -41,9 +41,25 @@ body {
   box-shadow: 0 4px 20px rgba(255, 154, 158, 0.4) !important;
 }
 
-/* 顶部大图渐变 */
-#page-header {
+/* 顶部大图渐变 - 只在没有背景图时应用 */
+#page-header:not([style*="background-image"]) {
   background: linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%) !important;
+}
+
+/* 如果有背景图，添加渐变叠加效果 */
+#page-header[style*="background-image"] {
+  position: relative;
+}
+
+#page-header[style*="background-image"]:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 229, 180, 0.6) 0%, rgba(255, 170, 165, 0.6) 50%, rgba(255, 138, 128, 0.6) 100%);
+  pointer-events: none;
 }
 
 /* 链接颜色 */
@@ -175,7 +191,7 @@ strong, b {
 }
 
 /* 文章元信息 */
-#post .post-meta, .post .post-meta, .post-meta, .article-meta {
+#post .post-meta, .post .post-meta, .post-meta {
   background: linear-gradient(90deg, rgba(255, 234, 167, 0.6), rgba(255, 182, 193, 0.6)) !important;
   border-radius: 20px !important;
   padding: 8px 16px !important;

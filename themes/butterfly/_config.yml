@@ -60,7 +60,7 @@ avatar:
   effect: false
 
 # Disable all banner images
-disable_top_img: false
+disable_top_img: /img/bg.png
 
 # If the banner of page not setting, it will show the default_top_img
 default_top_img: "linear-gradient(45deg, #FFEAA7, #FF9A9E)"
@@ -77,7 +77,7 @@ tag_img: "linear-gradient(135deg, #FFEAA7 0%, #FFB6C1 50%, #FF9A9E 100%)"
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
 #  - tag name: xxxxx
-tag_per_img:
+tag_per_img: /img/bg.png
 
 # Note: category page, not categories page
 category_img: "linear-gradient(135deg, #FFE5B4 0%, #FFB6C1 50%, #FF9A9E 100%)"
@@ -85,10 +85,10 @@ category_img: "linear-gradient(135deg, #FFE5B4 0%, #FFB6C1 50%, #FF9A9E 100%)"
 # The banner image of category page, you can set the banner image for each category
 # Format:
 #  - category name: xxxxx
-category_per_img:
+category_per_img: /img/bg.png
 
 # The background image of footer
-footer_img: false
+footer_img: /img/bg.png
 
 # Website Background
 # Can set it to color or image url
@@ -101,6 +101,7 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
+    - /img/bg.png
     - "linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%)"
     - "linear-gradient(135deg, #FFEAA7 0%, #FFB6C1 50%, #FF9A9E 100%)"
     - "linear-gradient(135deg, #FFD3A5 0%, #FFA07A 50%, #FFB6C1 100%)"

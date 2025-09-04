@@ -69,10 +69,10 @@ default_top_img: "linear-gradient(45deg, #FFEAA7, #FF9A9E)"
 index_img: "linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%)"
 
 # The banner image of archive page
-archive_img:
+archive_img: "linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%)"
 
 # Note: tag page, not tags page
-tag_img:
+tag_img: "linear-gradient(135deg, #FFEAA7 0%, #FFB6C1 50%, #FF9A9E 100%)"
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
@@ -80,7 +80,7 @@ tag_img:
 tag_per_img:
 
 # Note: category page, not categories page
-category_img:
+category_img: "linear-gradient(135deg, #FFE5B4 0%, #FFB6C1 50%, #FF9A9E 100%)"
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
@@ -101,7 +101,9 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    # - xxx.jpg
+    - "linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%)"
+    - "linear-gradient(135deg, #FFEAA7 0%, #FFB6C1 50%, #FF9A9E 100%)"
+    - "linear-gradient(135deg, #FFD3A5 0%, #FFA07A 50%, #FFB6C1 100%)"
 
 # Replace Broken Images
 error_img:

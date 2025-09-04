@@ -813,7 +813,7 @@ beautify:
 # Don't modify the following settings unless you know how they work
 font:
   global_font_size: 14px
-  code_font_size: 12px
+  code_font_size: 14px
   font_family: PingFangSC
   code_font_family: JetBrains Mono
 

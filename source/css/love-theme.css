@@ -1,0 +1,141 @@
+/* 自定义爱情主题渐变样式 */
+
+/* 主要背景渐变 */
+body {
+  background: linear-gradient(135deg, #FFEAA7 0%, #FFD3A5 25%, #FFA07A 50%, #FFB6C1 75%, #FF9A9E 100%) !important;
+  background-attachment: fixed !important;
+  min-height: 100vh;
+}
+
+/* 顶部导航栏渐变 */
+#nav {
+  background: linear-gradient(90deg, rgba(255, 234, 167, 0.9) 0%, rgba(255, 182, 193, 0.9) 100%) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* 文章卡片美化 */
+.recent-post-item {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 248, 220, 0.8)) !important;
+  border: 1px solid rgba(255, 182, 193, 0.3) !important;
+  box-shadow: 0 8px 32px rgba(255, 154, 158, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* 侧边栏卡片美化 */
+.card-widget {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 240, 245, 0.8)) !important;
+  border: 1px solid rgba(255, 182, 193, 0.3) !important;
+  box-shadow: 0 8px 32px rgba(255, 154, 158, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* 按钮悬停效果 */
+.btn, button {
+  background: linear-gradient(45deg, #FFB6C1, #FF9A9E) !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn:hover, button:hover {
+  background: linear-gradient(45deg, #FF9A9E, #FFB6C1) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 20px rgba(255, 154, 158, 0.4) !important;
+}
+
+/* 顶部大图渐变 */
+#page-header {
+  background: linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%) !important;
+}
+
+/* 链接颜色 */
+a {
+  color: #FF6B9D !important;
+  transition: color 0.3s ease !important;
+}
+
+a:hover {
+  color: #FF1493 !important;
+}
+
+/* 标签样式 */
+.tags .tag-cloud-item {
+  background: linear-gradient(45deg, #FFE4E1, #FFB6C1) !important;
+  color: #8B0000 !important;
+  border: 1px solid rgba(255, 105, 180, 0.3) !important;
+}
+
+/* 分页器美化 */
+.pagination .page-number {
+  background: linear-gradient(45deg, #FFEAA7, #FFB6C1) !important;
+  color: #8B0000 !important;
+}
+
+.pagination .page-number.current {
+  background: linear-gradient(45deg, #FF9A9E, #FFB6C1) !important;
+  color: white !important;
+}
+
+/* 代码块美化 */
+.highlight {
+  background: rgba(255, 228, 225, 0.8) !important;
+  border: 1px solid rgba(255, 182, 193, 0.3) !important;
+  border-radius: 8px !important;
+}
+
+/* 引用块美化 */
+blockquote {
+  background: linear-gradient(135deg, rgba(255, 240, 245, 0.8), rgba(255, 228, 225, 0.6)) !important;
+  border-left: 4px solid #FF9A9E !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 234, 167, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #FFB6C1, #FF9A9E);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #FF9A9E, #FF69B4);
+}
+
+/* 文章内容区域 */
+#article-container {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 182, 193, 0.2) !important;
+  box-shadow: 0 8px 32px rgba(255, 154, 158, 0.15) !important;
+}
+
+/* 标题美化 */
+h1, h2, h3, h4, h5, h6 {
+  background: linear-gradient(45deg, #FF6B9D, #FF9A9E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 爱心动画 */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* 为表情符号添加动画 */
+.emoji {
+  animation: heartbeat 2s infinite;
+}
+
+/* 特殊强调文本 */
+strong, b {
+  color: #FF1493 !important;
+  text-shadow: 0 0 5px rgba(255, 20, 147, 0.3);
+}

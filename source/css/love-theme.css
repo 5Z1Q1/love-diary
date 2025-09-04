@@ -92,32 +92,6 @@ blockquote, .post-content blockquote, .article-content blockquote {
   margin: 16px 0 !important;
 }
 
-/* 滚动条美化 */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(255, 234, 167, 0.3);
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #FFB6C1, #FF9A9E);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #FF9A9E, #FF69B4);
-}
-
-/* 文章内容区域 */
-#article-container {
-  background: rgba(255, 255, 255, 0.9) !important;
-  backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(255, 182, 193, 0.2) !important;
-  box-shadow: 0 8px 32px rgba(255, 154, 158, 0.15) !important;
-}
-
 /* 标题美化 - 移除透明效果，确保文字可见 */
 h1, h2, h3, h4, h5, h6 {
   color: #FF6B9D !important;
@@ -144,23 +118,6 @@ strong, b {
 }
 
 /* ========== 文章页面专用样式 ========== */
-
-/* 文章页面背景 */
-.layout {
-  background: transparent !important;
-}
-
-/* 文章主体容器 */
-#post, .post, article, #article-container {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 248, 220, 0.9)) !important;
-  border-radius: 15px !important;
-  border: 1px solid rgba(255, 182, 193, 0.3) !important;
-  box-shadow: 0 12px 40px rgba(255, 154, 158, 0.2) !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
-  padding: 20px !important;
-  margin: 20px auto !important;
-}
 
 /* 文章标题特效 */
 #post .post-title, .post .post-title, .post-title, h1.article-title, .article-title {
@@ -241,31 +198,9 @@ strong, b {
   color: #8B0000 !important;
 }
 
-/* 通用文章容器样式 - 添加更多选择器确保覆盖 */
-.layout_post #main, .layout_post .main-content, .post-page, .post-wrap {
-  background: transparent !important;
-}
-
 /* 确保所有文章内容区域都应用样式 */
 .post-content, .article-content, #article-container .article-content {
   background: transparent !important;
-}
-
-/* 强制应用背景到所有可能的文章容器 */
-body.post-page #main .main-content, 
-body.post-page .post,
-body.post-page article,
-.layout_post #main .main-content,
-.layout_post .post,
-.layout_post article {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 248, 220, 0.9)) !important;
-  border-radius: 15px !important;
-  border: 1px solid rgba(255, 182, 193, 0.3) !important;
-  box-shadow: 0 12px 40px rgba(255, 154, 158, 0.2) !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
-  padding: 20px !important;
-  margin: 20px auto !important;
 }
 
 /* 文章底部信息 */

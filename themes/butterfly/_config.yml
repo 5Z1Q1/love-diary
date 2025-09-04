@@ -63,16 +63,16 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: "linear-gradient(45deg, #FFEAA7, #FF9A9E)"
+default_top_img: /img/bg.png
 
 # The banner image of index page
-index_img: "linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%)"
+index_img: /img/bg.png
 
 # The banner image of archive page
-archive_img: "linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%)"
+archive_img: /img/bg.png
 
 # Note: tag page, not tags page
-tag_img: "linear-gradient(135deg, #FFEAA7 0%, #FFB6C1 50%, #FF9A9E 100%)"
+tag_img: /img/bg.png
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:

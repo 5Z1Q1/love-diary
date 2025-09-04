@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://www.lnhwzq.top
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,7 +103,8 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 # deploy:
 #   type: ''
-deploy:
-  type: git
-  repository: https://github.com/yourusername/love-diary.git
-  branch: main
+# 使用 GitHub Actions 部署，注释掉原来的 git 部署配置
+# deploy:
+#   type: git
+#   repository: https://github.com/5Z1Q1/love-diary.git
+#   branch: main

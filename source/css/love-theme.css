@@ -46,23 +46,6 @@ body.index {
   box-shadow: 0 4px 20px rgba(255, 154, 158, 0.4) !important;
 }
 
-/* 页面头部 - 首页完全不干扰 */
-body:not(.index) #page-header:not([style*="background-image"]):not(.has-img) {
-  background: linear-gradient(135deg, #FFE5B4 0%, #FFAAA5 50%, #FF8A80 100%) !important;
-}
-
-/* 首页头部保持原样 */
-body.index #page-header {
-  background: none !important;
-  background-color: transparent !important;
-}
-
-/* 确保首页的封面能正常显示 */
-body.index #page-header:before,
-body.index #page-header:after {
-  display: none !important;
-}
-
 /* 链接颜色 */
 a {
   color: #FF6B9D !important;

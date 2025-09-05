@@ -304,7 +304,7 @@ aside:
           "你是我生命中最美的意外",
           "遇见你，是我这辈子最大的幸运",
           "想和你一起看日出日落，四季轮回",
-          "愿做你心中的那片海，<br>温柔且深邃",
+          "愿做你心中的那片海，温柔且深邃",
           "因为你，我的世界从此有了颜色",
           "时间为证，<br>我爱你千千万万遍",
           "你是我心中永远的诗和远方",
@@ -330,10 +330,10 @@ aside:
         // 等待页面加载完成后开始轮播
         if (document.readyState === 'loading') {
           document.addEventListener('DOMContentLoaded', function() {
-            setInterval(updateAnnouncement, 3000);
+            setInterval(updateAnnouncement, 5000);
           });
         } else {
-          setInterval(updateAnnouncement, 3000);
+          setInterval(updateAnnouncement, 5000);
         }
       })();
       </script>

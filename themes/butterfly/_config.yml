@@ -292,7 +292,7 @@ aside:
   card_announcement:
     enable: true
     content: |
-      <div id="love-announcement">玫瑰与晚霞共绘浪漫，你是我藏在心底的爱意泛滥</div>
+      <div id="love-announcement">玫瑰与晚霞共绘浪漫，<br>你是我藏在心底的爱意泛滥</div>
       <script>
       (function() {
         const messages = [

@@ -291,7 +291,54 @@ aside:
       link: https://github.com/5Z1Q1
   card_announcement:
     enable: true
-    content: 爱真的需要勇气
+    content: |
+      <div id="love-announcement">玫瑰与晚霞共绘浪漫，你是我藏在心底的爱意泛滥</div>
+      <script>
+      (function() {
+        const messages = [
+          "玫瑰与晚霞共绘浪漫，你是我藏在心底的爱意泛滥",
+          "星河滚烫，你是人间理想",
+          "山野千里，你是我藏在微风中的欢喜", 
+          "春风十里，不如你",
+          "愿岁月不老，愿时光不散，愿我们永远在一起",
+          "你是我生命中最美的意外",
+          "遇见你，是我这辈子最大的幸运",
+          "想和你一起看日出日落，四季轮回",
+          "你笑起来真好看，像春天的花一样",
+          "愿做你心中的那片海，温柔且深邃",
+          "因为你，我的世界从此有了颜色",
+          "时间为证，我爱你千千万万遍",
+          "你是我心中永远的诗和远方",
+          "愿与你共度每一个春夏秋冬",
+          "你是我生命里最温暖的阳光",
+          "爱你，是我做过最正确的决定",
+          "想把世界上最好的都给你",
+          "你是我心中最美的风景",
+          "愿我们的爱情如星辰般永恒",
+          "你是我心中唯一的答案"
+        ];
+        
+        let currentIndex = 0;
+        
+        function updateAnnouncement() {
+          const element = document.getElementById('love-announcement');
+          if (element) {
+            element.innerHTML = messages[currentIndex];
+            currentIndex = (currentIndex + 1) % messages.length;
+          }
+        }
+        
+        // 等待页面加载完成后开始轮播
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function() {
+            setInterval(updateAnnouncement, 3000);
+          });
+        } else {
+          setInterval(updateAnnouncement, 3000);
+        }
+      })();
+      </script>
+      
   card_recent_post:
     enable: true
     # If set 0 will show all

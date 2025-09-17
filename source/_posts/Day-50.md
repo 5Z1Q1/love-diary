@@ -8,7 +8,7 @@ tags:
   - 成长
 categories: 
   - 爱情日记
-cover: /img/day50.png
+cover: /img/day-50.png
 description: 时间轻柔地流淌，我们的故事在每一天中悄然绽放
 ---
 
